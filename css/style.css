@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color: rgb(213, 249, 255);
+    color: rgb(3, 31, 56);
+}
+
+h1{
+     font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    margin: 0; /* elimina margen por defecto */
+}
+
+header{
+    text-align: center;
+    border: solid 4px rgb(255, 255, 255);
+    background-color: rgb(3, 31, 56); 
+    color: white; /* color de letra */
+    padding: 10px; /* margen interno*/
+    border-radius: px; /* bordes redondeados */
+    margin-bottom: 20px; /* margen externo */
+}
