@@ -15,15 +15,18 @@
         <p>Desarollador fullstack | Estudiante de Ingienería en TI</p> <!-- p para párrafos/texto -->
     </header>
     <!-- CREANDO MENU DE NAVEGACION -->
-    <nav>
-        <a href=#> Inicio</a>
-        <a href=#> Sobre mi</a>
-        <a href=#> Mi Experiencia</a>
-        <a href=#> Contactame</a>
+    <nav id="menu-principal">
+        <ul>
+            <li><a href=#> Inicio</a></li>
+            <li><a href="#bienvenida"> Sobre mi</a></li>
+            <li><a href="#experiencia"> Mi Experiencia</a></li>
+            <li><a href="#habilidades"> Habilidades</a></li>
+            <li><a href="#contacto"> Contactame</a></li>
+        </ul>
     </nav>
     <!-- PARTE PRINCIPAL -->
     <main>
-        <section>
+        <section id="bienvenida">
             <h2>Bienvenidos a mi Portafolio Profesional</h2>
             <p>Soy <mark>Jose Valentin Gomez Martinez</mark> me especializo en <strong>Tecnologías de la
                     Informaión</strong> Lorem Ipsum is simply dummy text of the printing and
@@ -41,49 +44,94 @@
                 <p>Actualmente estudio la carrera de Tecnologias de la Información e Innovación Digital</p>
             </aside>
         </section>
-
-        <section>
+        <section id="experiencia">
             <h2>Experiencia Profesional</h2>
-            <article>
-                <h3>Proyecto Integrador</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
-                <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                <ul>
-                    <li>Tecnologías .NET</li>
-                    <li>IGestión de Inventarios</li>
-                    <li>Base de Datos SQL Server</li>
-                    <li>Trabjao en Equipo</li>
-                </ul>
-            </article>
-            <section>
-                <article>
-                <h3>Proyecto Integrador II</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
-                <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                <ul>
-                    <li>Tecnologías .NET</li>
-                    <li>IGestión de Inventarios</li>
-                    <li>Base de Datos SQL Server</li>
-                    <li>Trabjao en Equipo</li>
-                </ul>
-            </article>
-                <article>
-                <h3>Proyecto Integrador III</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
-                <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                <ul>
-                    <li>Tecnologías .NET</li>
-                    <li>IGestión de Inventarios</li>
-                    <li>Base de Datos SQL Server</li>
-                    <li>Trabjao en Equipo</li>
-                </ul>
-            </article>
-            </section>
-        </section>
+            <div id="lista-proyectos">
+                <article class="proyecto">
+                    <h3>Proyecto Integrador</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
+                    <ul>
+                        <li>Tecnologías .NET</li>
+                        <li>IGestión de Inventarios</li>
+                        <li>Base de Datos SQL Server</li>
+                        <li>Trabjao en Equipo</li>
+                    </ul>
+                </article>
 
-        <section>
+                <article class="proyecto">
+                    <h3>Proyecto Integrador II</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
+                    <ul>
+                        <li>Tecnologías .NET</li>
+                        <li>IGestión de Inventarios</li>
+                        <li>Base de Datos SQL Server</li>
+                        <li>Trabjao en Equipo</li>
+                    </ul>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Proyecto Integrador III</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
+                    <ul>
+                        <li>Tecnologías .NET</li>
+                        <li>IGestión de Inventarios</li>
+                        <li>Base de Datos SQL Server</li>
+                        <li>Trabjao en Equipo</li>
+                    </ul>
+                </article>
+
+        </section>
+        <section id="habilidades">
+            <h2> Habilidades y Competencia</h2>
+            <h3> Lenguajes y Tecnología</h3>
+            <ul class="lista-tecnologías">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Js</li>
+                <li>C#</li>
+            </ul>
+            <h3>Niveles de Dominio</h3>
+            <div>
+                <label>HTML5</label>
+                <progress max="100" value="80">80%</progress>
+            </div>
+            <div>
+                <label>CSS</label>
+                <progress max="100" value="60">60%</progress>
+            </div>
+            <div>
+                <label>JavaScript</label>
+                <progress max="100" value="20">20%</progress>
+            </div>
+        </section>
+        </div>
+        <section id="contacto">
             <h2>Contactame</h2>
-            <p>Puedes contactarme a través de mi correo electrónico:
+            <form>
+                <div class="campos">
+                    <label>Nombre completo</label>
+                    <input type="text" value="" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="campos">
+                    <label>Correo electrónico</label>
+                    <input type="email" value="" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="campos">
+                    <label>Mensaje</label>
+                    <textarea placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <div class="campos">
+                    <!-- con input tambien se puede-->
+                    <button type="submit">Enviar</button>
+                </div>
+                <div class="campos"></div>
+            </form>
+        </section>
+        <h2>Contactame</h2>
+        <p>Puedes contactarme a través de mi correo electrónico:
     </main>
     <!-- PIE DE PÁGINA -->
     <footer>
