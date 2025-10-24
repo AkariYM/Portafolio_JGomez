@@ -141,3 +141,8 @@ progress{
    padding-top: 20px;
    
 }
+#contacto .opciones{
+    width: 5%;
+    padding: 10px;
+    border: solid 1px blue
+}
